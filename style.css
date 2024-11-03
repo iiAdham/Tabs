@@ -1,0 +1,34 @@
+body {
+    background-color: #F7F6FB;
+}
+
+button {
+    background-color: white !important;
+}
+
+.content {
+    background-color: white;
+}
+
+.nav-link {
+    background-color: white;
+    border-radius: 0 !important;
+    color: rgba(0, 0, 0, 0.445);
+}
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: black;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.nav-pills .nav-link.active::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    height: 40px;
+    width: 15px;
+}

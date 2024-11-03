@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav flex-column nav-pills sidebar" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active" id="v-pills-general-tab" data-bs-toggle="pill"
+                            href="#v-pills-general" role="tab" aria-controls="v-pills-general" aria-selected="true">
+                            General
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" id="v-pills-tax-tab" data-bs-toggle="pill" href="#v-pills-tax" role="tab"
+                            aria-controls="v-pills-tax" aria-selected="false">
+                            Tax
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" id="v-pills-uom-tab" data-bs-toggle="pill" href="#v-pills-uom" role="tab"
+                            aria-controls="v-pills-uom" aria-selected="false">
+                            UOM
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" id="v-pills-attributes-tab" data-bs-toggle="pill" href="#v-pills-attributes"
+                            role="tab" aria-controls="v-pills-attributes" aria-selected="false">
+                            Attributes
+                        </a>
+                    </li>
+                    <li class="nav-item mb">
+                        <a class="nav-link" id="v-pills-variants-tab" data-bs-toggle="pill" href="#v-pills-variants"
+                            role="tab" aria-controls="v-pills-variants" aria-selected="false">
+                            Variants
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 content">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                        aria-labelledby="v-pills-general-tab">
+                        <div class="container my-5">
+                            <div class="text-start">
+                                <h1>Main Information</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Item Code" class="form-control">
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Item Name" class="form-control">
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Item Short Name" class="form-control">
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" placeholder="Item Category" class="form-control">
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" placeholder="Item Tag" class="form-control">
+                                </div>
+                            </div>
+                            <hr class="my-5">
+                            <div class="text-start">
+                                <h1>Country of Origin</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Country of Origin" class="form-control">
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Warranty (Per Month)" class="form-control">
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <input type="text" placeholder="Life Time (Per Year)" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-tax" role="tabpanel" aria-labelledby="v-pills-tax-tab">
+                        <h3>Tax</h3>
+                        <p>Tax content goes here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-uom" role="tabpanel" aria-labelledby="v-pills-uom-tab">
+                        <h3>UOM</h3>
+                        <p>Unit of Measurement content goes here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-attributes" role="tabpanel"
+                        aria-labelledby="v-pills-attributes-tab">
+                        <h3>Attributes</h3>
+                        <p>Attributes content goes here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-variants" role="tabpanel"
+                        aria-labelledby="v-pills-variants-tab">
+                        <h3>Variants</h3>
+                        <p>Variants content goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
